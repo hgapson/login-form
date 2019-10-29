@@ -47,13 +47,26 @@
                         <div class="form-group">Password<br>
                         <div class="ui right labeled input password">
                             <input type="password" 
+                            id="typepass"
                             name="password"
                             placeholder="password">
-                            <i class="fas fa-eye eye"></i>
+                            <i class="fas fa-eye eye" onclick="Toggle()"></i>
                     </div>
                     </div>
                             
                             </div>
+                 <script> 
+                    // Change the type of input to password or text 
+                        function Toggle() { 
+                            var temp = document.getElementById("typepass"); 
+                            if (temp.type === "password") { 
+                                temp.type = "text"; 
+                            } 
+                            else { 
+                                temp.type = "password"; 
+                            } 
+                        } 
+                </script> 
 
                         
                     </form>
